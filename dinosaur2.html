@@ -1,0 +1,23 @@
+<html>
+
+<h1>Second question</h1>
+<p>that is the second color of the rainbow?</p>
+
+<p><input type="text" id="answer" value="answer here"></p>
+<p><button onclick="checkAnswer()">Check Answer</button></p>
+
+<script>
+    function checkAnswer() {
+        var answer = document.getElementById("answer").value
+        if (answer==="orange") {
+          alert("correct answer!")
+          window.location.href="/dinosaur3.html"
+        } else {
+          alert("No!")
+          window.location.href="/dinosaurEatYou.html"
+        }
+    }
+</script>
+
+
+</html>

@@ -1,6 +1,23 @@
 <html>
+
 <h1>You meet a big dinosur!</h1>
 <p><img src="https://i.pinimg.com/550x/e7/e4/c4/e7e4c4c687a456afe46fff4e2550f351.jpg"hight="auto" width="600"></p>
-<h1>You want to....<a href="http://localhost/">Turn back?</a>or <a href="/ending.html"> Talk with it.</a></h1>
+<h2>The dragon asks you a question</h2>
+<p>what is the first color of the rainbow?</p>
+<p><input type="text" id="answer" value="type your answer here"></p>
+<p><button onclick="checkAnswer()">Check Answer</button></p>
+
+<script>
+    function checkAnswer() {
+        var answer = document.getElementById("answer").value
+        if (answer==="red") {
+          alert("correct answer!")
+          window.location.href="/dinosaur2.html"
+        } else {
+          alert("No!")
+          window.location.href="/dinosaurEatYou.html"
+        }
+    }
+</script>
 
 </html>
