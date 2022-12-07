@@ -22,6 +22,8 @@ const server = http.createServer((req, res) => {
     fs.createReadStream('dinosaur5.html').pipe(res)
   } else if (url ==='/dinosaurEatYou.html') {
     fs.createReadStream('dinosaurEatYou.html').pipe(res)
+  }  else if (url ==='/cheatingroom.html') {
+    fs.createReadStream('cheatingroom.html').pipe(res)
   }
   else {
     res.write('Doesn\'t exist'); 
